@@ -128,10 +128,10 @@ describe "Blog Post App" do
       expect(Post.last.name).to eq("Hello World")
     end
 
-    it "submits the form via a delete request" do
-      visit "/posts/#{@post2.id}"
-      expect(find("#hidden", :visible => false).value).to eq("delete")
-    end
+  #  it "submits the form via a delete request" do
+  #    visit "/posts/#{@post2.id}"
+  #    expect(find("#hidden", :visible => false).value).to eq("delete")
+  #  end
 
   end
 
