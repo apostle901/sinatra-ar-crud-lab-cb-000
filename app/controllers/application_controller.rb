@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
-  patch '/posts' do
+  patch '/posts/:id' do
     @post.update(name: params[:name], content: params[:content])
     erb :index
   end
